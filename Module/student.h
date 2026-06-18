@@ -3,7 +3,8 @@
 
 #include "courseResult.h"
 
-typedef struct Student{
+typedef struct Student
+{
     char id[20];
     char name[80];
     CourseResult courseResults[100];
@@ -15,5 +16,4 @@ Student createStudent(char id[], char name[]);
 void addCourseResultToStudent(Student *student, CourseResult result);
 void viewStudent(Student student);
 void sortStudentsByCGPA(Student students[], int n_students);
-
 #endif
