@@ -10,3 +10,7 @@ gcc -I Module tests/test_gpa.c Module/course.c Module/courseResult.c Module/gpa.
 test_gpa.out
 chmod +x test_gpa.out
 ./test_gpa.out
+gcc -I Module tests/test_student.c Module/course.c Module/courseResult.c Module/gpa.c
+Module/student.c -o test_student.out
+chmod +x test_student.out
+./test_student.out
