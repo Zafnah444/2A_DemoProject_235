@@ -3,7 +3,8 @@
 #include "student.h"
 #include "gpa.h"
 
-Student createStudent(char id[], char name[]){
+Student createStudent(char id[], char name[])
+{
     Student student;
     strcpy(student.id, id);
     strcpy(student.name, name);
@@ -25,9 +26,12 @@ void viewStudent(Student student)
 }
 void sortStudentsByCGPA(Student students[], int n_students)
 {
-    for (int i = 0; i < n_students; i++){
-        for (int j = i + 1; j < n_students; j++){
-            if (students[j].cgpa > students[i].cgpa){
+    for (int i = 0; i < n_students; i++)
+    {
+        for (int j = i + 1; j < n_students; j++)
+        {
+            if (students[j].cgpa > students[i].cgpa)
+            {
                 Student temp = students[i];
                 students[i] = students[j];
                 students[j] = temp;
